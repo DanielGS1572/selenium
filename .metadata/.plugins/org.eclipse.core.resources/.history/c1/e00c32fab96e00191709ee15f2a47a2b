@@ -1,0 +1,37 @@
+package demos;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Login {
+
+	public static void main(String[] args) {
+		//1.- Open the web browser
+	//Se setean las propiedades para decirle el .exe que hará que se habrá un explorer
+		//google chrome --> webdriver.chrome.driver
+		//firefox 		--> webdriver.gecko.driver
+		//IE			--> webdriver.ie.driver
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Danielgonzali\\Documents\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		//2.- Navigate to web application
+		//http://sdettraining.com/trguitransactions/AccountManagement.aspx
+		driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+		System.out.println(driver.getTitle());			//Para obtener el titulo del tab
+		
+		//Find elements
+		
+		//3.- Enter email
+		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys("tim@testemail.com");
+		
+		//4.- Enter password
+		
+		//5.- Click login
+		
+		//6.- Get confirmation
+		
+		//7.- Close the browser
+
+	}
+
+}

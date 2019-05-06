@@ -1,0 +1,10 @@
+package Section7;
+
+public class A1_ParentChild {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

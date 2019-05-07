@@ -11,7 +11,7 @@ public class A2_Locators {
  * - ClassName - Si se tiene un classname con diferentes identificadores separados por espacio es recomendable usar xpath, selenium no acepta compound classes
  * 		Si existen varios elementos con el mismo classname regresa el primero que encuentra, (no regresa un arreglo)
  * - Name
- * - linkText - Es para cuando se quiere acceder a un tag anchor <a> (es un elemento clickeable)
+ * - linkText - Es para cuando se quiere acceder a un tag anchor <a> (es un elemento clickeable) y lo que se pasa como parametro es lo que se encuentra como el nombre del anchor
  * Si no se tienen la forma de acceder con los datos anteriores puede ser a traves de Xpath ó CSS (Son los más comunes y preferidos)
  * - Xpath - Chrome y firefox generan los xpaths de los elementos deseados pero no son 100% confiables, simplemente se da click derecho en el elemento y en copy (hay diferentes
  * 		formas de obtener el xpath y entre browsers esto puede cambiar (si empieza por /html ignorarlo)

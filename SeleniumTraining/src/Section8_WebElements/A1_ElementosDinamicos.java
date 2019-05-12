@@ -51,6 +51,15 @@ public class A1_ElementosDinamicos {
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();
 		Thread.sleep(2000L);
 		driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+		
+		/*PARENT-CHILD
+		/*PARENT-CHILD.- en ocasiones es posible que a la gente no le guste el uso
+		de los indices, por ejemplo "(//a[@value='MAA'])[2]", para eso se puede usar
+		parent-child location
+		//[Se selecciona el padre] //[Se selecciona el hijo]		--> esto ya no tiene el problema que existan dos en toda la pagina
+		//div[@id='ctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='MAA']
+		*/
+		
 	}
 
 }

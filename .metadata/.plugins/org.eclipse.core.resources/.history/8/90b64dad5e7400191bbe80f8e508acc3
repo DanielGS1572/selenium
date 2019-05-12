@@ -1,0 +1,12 @@
+package Section8_WebElements;
+
+public class A5_TestNG_Assertions {
+
+	public static void main(String[] args) {
+		//Para poner testng siplemente se busca en google testng jar download y se 
+		//descarga de la pagina de maven y se da de alta en los plugins dando clic en 
+		//properties --> java build path --> libraries --> add external jar
+
+	}
+
+}

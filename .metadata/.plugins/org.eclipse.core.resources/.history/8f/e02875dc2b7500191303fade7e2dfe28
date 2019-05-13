@@ -1,0 +1,24 @@
+package Section9_Synchronization;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class A4_Actions {
+/*A veces es necesario capturar algunas de las acciones, por ejemplo en amazon
+ * si se coloca el cursos en el login, no es necesario dar clic, simplemente se abre
+ * Esto se hace a través de la clase Actions
+ */
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Danielgonzali\\Documents\\Selenium\\repo\\selenium\\Artefactos\\chromedriver74.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.com/");
+		driver.manage().window().maximize();
+		
+		Actions a = new Actions(driver);
+		a.moveToElement(driver.findElement(By.cssSelector("nav-a#nav-a-2"))).build().perform();
+	}
+
+}

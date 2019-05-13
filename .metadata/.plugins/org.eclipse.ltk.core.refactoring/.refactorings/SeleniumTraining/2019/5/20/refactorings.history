@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Section9_Synchronization.A1_Synchronization_Explicit&apos; to &apos;A2_Synchronization_Explicit&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumTraining&apos;&#x0D;&#x0A;- Original element: &apos;Section9_Synchronization.A1_Synchronization_Explicit&apos;&#x0D;&#x0A;- Renamed element: &apos;Section9_Synchronization.A2_Synchronization_Explicit&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;A1_Synchronization_Explicit&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Section9_Synchronization{A1_Synchronization_Explicit.java[A1_Synchronization_Explicit" matchStrategy="1" name="A2_Synchronization_Explicit" qualified="false" references="true" similarDeclarations="false" stamp="1557713343804" textual="false" version="1.0"/>
+</session>

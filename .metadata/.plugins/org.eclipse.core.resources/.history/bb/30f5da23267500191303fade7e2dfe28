@@ -1,0 +1,10 @@
+package Section9_Synchronization;
+
+public class A3_Fluent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

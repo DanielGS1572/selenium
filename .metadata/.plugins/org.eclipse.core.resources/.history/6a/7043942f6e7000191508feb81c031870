@@ -1,9 +1,0 @@
-package Section8_WebElements;
-
-public class A1_ElementosDinamicos {
-
-	public static void main(String[] args) {
-//En esta clase se automatizarán
-	}
-
-}

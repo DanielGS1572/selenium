@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49" started-at="2019-05-20T11:51:51Z" finished-at="2019-05-20T11:51:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="49" started-at="2019-05-20T11:51:51Z" finished-at="2019-05-20T11:51:51Z">
+      <class name="Section17_TestNG.A3_Basics3">
+        <test-method status="PASS" signature="apiLogin()[pri:0, instance:Section17_TestNG.A3_Basics3@737996a0]" name="apiLogin" duration-ms="14" started-at="2019-05-20T06:51:51Z" finished-at="2019-05-20T06:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiLogin -->
+        <test-method status="PASS" signature="mobileLogin()[pri:0, instance:Section17_TestNG.A3_Basics3@737996a0]" name="mobileLogin" duration-ms="3" started-at="2019-05-20T06:51:51Z" finished-at="2019-05-20T06:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileLogin -->
+        <test-method status="PASS" signature="webLogin()[pri:0, instance:Section17_TestNG.A3_Basics3@737996a0]" name="webLogin" duration-ms="3" started-at="2019-05-20T06:51:51Z" finished-at="2019-05-20T06:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLogin -->
+      </class> <!-- Section17_TestNG.A3_Basics3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

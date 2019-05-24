@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<!-- Se pueden tener variable a nivel suite o a nivel test -->
+	<parameter name="URL" value="www.google.com" />
+	<parameter name="URL2" value="www.yahoo.com.mx" />
+	<test name="Peronal Loan">
+		<parameter name="URL3" value="www.wikipedia.com" />
+		<classes>
+			<class name="Section17_TestNG.A7_Parametrizacion" />
+		</classes>
+	</test>
+</suite>

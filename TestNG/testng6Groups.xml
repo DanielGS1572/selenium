@@ -5,7 +5,7 @@
 	<test name="Peronal Loan">
 		<groups>
 			<run>
-				<include name="smoke"/>
+				<include name="smoke"/>  		<!-- Aqui también puede ser exclude -->
 			</run>
 		</groups>
 		<packages>

@@ -3,12 +3,10 @@
 <!-- Se pueden tener varios archivos xml para ejecutar diferentes pruebas -->
 <suite name="Loan Department">
 
-	<!-- Antes de que ejecute la sección de test ejecutara el metodo @BeforeTest-->
+	<!-- Antes de que ejecute la sección de test ejecutara el metodo @BeforeTest -->
 	<test name="Peronal Loan">
 		<classes>
-			<class name="Section17_TestNG.A5_Annotations">
-
-			</class>
+			<class name="Section17_TestNG.A5_Annotations" />
 		</classes>
 	</test>
 

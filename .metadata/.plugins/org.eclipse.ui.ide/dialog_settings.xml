@@ -112,7 +112,7 @@
 		<item value="org.springsource.sts.cft:3.9.4.201804120943-RELEASE"/>
 		<item value="org.springsource.sts.package:3.9.4.201804120943-RELEASE-e46"/>
 		<item value="org.springsource.sts:3.9.4.201804120943-RELEASE"/>
-		<item value="org.testng.eclipse:6.9.12.201607091356"/>
+		<item value="org.testng.eclipse:6.9.11.201604020423"/>
 	</list>
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>

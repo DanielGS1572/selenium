@@ -14,14 +14,26 @@ public class A5_Annotations {
             test
 
      Es muy importante ver que las ejecuciones las hace de forma alfabetica si se ejecuta toda la clase completa
-
+	Para solucionar esto se tiene dependsOnMethods
+	
+	Si se quiere que no se ejecute un metodo en particular (ya sea que por ejemplo este tronando algo en esa parte)
+	Se pone la anotación (enabled=false)
+	
+	(timeout=n milisegundos)
     * */
+
+    @Test(timeOut=3000)
+    public void timeOutExample() throws InterruptedException {
+        Thread.sleep(4000);
+        System.out.println("    Timeout example");
+    }
+    
     @Test
     public void wmethod1() {
         System.out.println("    test3... se ejecuta al final por la w en el nombre del metodo");
     }
 
-    @Test
+    @Test(dependsOnMethods="wmethod1")
     public void method1() {
         System.out.println("    test1");
     }
@@ -38,7 +50,7 @@ public class A5_Annotations {
     }
     @AfterTest
     public void finishing() {
-        System.out.println("Prueba terminada con exito ... AFTERTEST");
+        System.out.println("Prueba terminada ... AFTERTEST");		//no importa si fue con exito o sin exito
     }
     @BeforeSuite
     public void BSuite() {

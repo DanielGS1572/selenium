@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<listeners>
+		<listener class-name="Section17_TestNG.Listener"/>
+	</listeners>
+	<test name="Peronal Loan">
+		<classes>
+			<class name="Section17_TestNG.A9_TestListeners" />
+		</classes>
+	</test>
+</suite>

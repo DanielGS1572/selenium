@@ -11,11 +11,13 @@ public class A1_Actions {
 	/*
 	 * A veces es necesario capturar algunas de las acciones, por ejemplo en
 	 * amazon si se coloca el cursos en el login, no es necesario dar clic,
-	 * simplemente se abre Esto se hace a través de la clase Actions
+	 * simplemente se abre Esto se hace a travï¿½s de la clase Actions
 	 */
 	public static void main(String[] args) throws InterruptedException {
+		/*System.setProperty("webdriver.chrome.driver",
+				"~/Documentos/repo/selenium/Artefactos/driverForLinux/chromedriver");*/
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Danielgonzali\\Documents\\Selenium\\repo\\selenium\\Artefactos\\chromedriver74.exe");
+				"./Artefactos/driverForLinux/chromedriver72");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.com/");
 		driver.manage().window().maximize();
@@ -23,7 +25,7 @@ public class A1_Actions {
 		Actions a = new Actions(driver);
 		// Para poner texto en mayusculas...
 		// El metodo click pertenece al tipo actions y no a un webdriver, para
-		// que no genere confusión
+		// que no genere confusiï¿½n
 		// driver.findElement(By.id("twotabsearchtextbox")).click();
 		
 		// Antes del build y el perform se pueden realizar acciones compuestas
@@ -35,7 +37,7 @@ public class A1_Actions {
 		a.moveToElement(element).build().perform();
 		
 		Thread.sleep(2000L);
-		//Para hacer click con el botón derecho:
+		//Para hacer click con el botï¿½n derecho:
 		a.moveToElement(element).contextClick().build().perform();
 		
 	}

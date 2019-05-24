@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Se pueden tener varios archivos xml para ejecutar diferentes pruebas -->
+<suite name="Loan Department">
+    <test name="Peronal Loan">
+        <classes>
+
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="Section17_TestNG.A3_Basics3">
+                <methods>
+                    <include name="mobile.*"/>     <!-- Ejecutará todos los metodos que empiecen con mobile-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

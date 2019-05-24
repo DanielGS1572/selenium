@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Se puede ejecutar grupos que correspondan a ciertos grupos ... ver que se le esta diciendo que tome en cuenta un paquete en particular -->
+<suite name="Loan Department">
+	<test name="Peronal Loan">
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="Section17_TestNG"/>
+		</packages>
+	</test>
+</suite>

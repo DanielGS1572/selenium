@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- Se pueden tener varios archivos xml para ejecutar diferentes pruebas -->
+<suite name="Loan Department">
+
+	<!-- Antes de que ejecute la sección de test ejecutara el metodo @BeforeTest-->
+	<test name="Peronal Loan">
+		<classes>
+			<class name="Section17_TestNG.A5_Annotations">
+
+			</class>
+		</classes>
+	</test>
+
+</suite>

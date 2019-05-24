@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!-- Se pueden tener varios archivos xml para ejecutar diferentes pruebas -->
 <suite name="Loan Department">
+
+	<!-- Ejecución de prueba llamada Peronal loan-->
 	<test name="Peronal Loan">
 		<classes>
 			<!-- <class name="Section17_TestNG.A1_Basics"/> -->	<!-- Son las clases a ejecutar -->
 			<!-- <class name="Section17_TestNG.A2_Basics2"/> -->	<!-- Paquete.clase -->
 		</classes>
 	</test>			<!-- Para excluir clases completas se puede comentar el codigo -->
+
+
+	<!-- Ejecución de prueba llamada car loan-->
 	<test name="Car Loan">
 		<classes>
 			<class name="Section17_TestNG.A3_Basics3">

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
+	<!-- Se pueden correr casos de pruebas en paralelo (diferentes etiquetas de test) poniendo en suite:
+	 parallel="tests" thread-count="2" ... thread es para indicar cada cuantos en batch-->
 	<listeners>
 		<listener class-name="Section17_TestNG.Listener"/>
 	</listeners>
-	<test name="Peronal Loan">
+	<test name="Peronal Loan">			<!--También a nivel clase se puede correr en paralelo ... parallel="classes" thread="n" -->
 		<classes>
 			<class name="Section17_TestNG.A9_TestListeners" />
 		</classes>

@@ -25,8 +25,8 @@ public class Listener implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult arg0) {
-		System.out.println("He fallado");
+	public void onTestFailure(ITestResult arg0) {			//el parametro que recibe en el metodo indica de donde provino el fallo
+		System.out.println("He fallado " + arg0.getName());
 		
 	}
 

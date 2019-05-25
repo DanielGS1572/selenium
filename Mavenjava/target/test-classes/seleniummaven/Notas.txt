@@ -1,0 +1,29 @@
+Ver los comentarios del archivo de pom.xml
+mvn clean.- Elimina todo lo que se haya compilado
+mvn compile.-	Es importante cuando se integre con jenkins, ya que a pesar
+			 	de que eclipse lo haga, con jenkins se tendria que validar
+			 	que el codigo este correcto (sin errores de sintaxis)
+mvn test.-		Cuando se ejecuta esta instrucción mvn por detrás hace la compilación,
+				al igual de que revisa antes que todas las dependencias esten en el .m2,
+				de no ser así las descarga
+				
+** Es importante que el nombre de las clases terminen con la palabra Test,
+ya que maven las identifica, ver que Selenium.java no se ejecuta por no tener la palabra
+Test. Tomar en cuenta también que si se comenta el @Test tampoco ejecutará ese metodo
+
+
+Para ejecutar un archivo .xml con maven:
+1.- 	Primero se debe de crear el .xml dando clic derecho sobre el proyecto --> TestNG
+		--> convert to TestNG
+2.- 	En el pom agregar las etiquetas de configuration (ver comentarios) para que 
+		ejecute en particular el xml testng.xml, así no importa que termine la clase
+		en "Test"
+
+** Si se quisiera ejecutar una sola clase con mvn sería:
+		mvn -Dtest=AppiumTest test
+		
+** Se pueden tener perfiles en el POM para indicarle que xml ejecutar
+		Para ejecutar un perfil en particular sería
+		mvn test -PSmoke	... También puede ser:
+		mvn -PSmoke test
+		

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Loan Department]">
-  <listeners>
-    <listener class-name="Section17_TestNG.Listener"/>
-  </listeners>
-  <test name="Peronal Loan(failed)" preserve-order="true">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Section17_TestNG.A9_TestListeners">
+      <class name="Section17_Parameters.A1_Parameters">
         <methods>
-          <include name="testListenerExample"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- Section17_TestNG.A9_TestListeners -->
+      </class> <!-- Section17_Parameters.A1_Parameters -->
     </classes>
-  </test> <!-- Peronal Loan(failed) -->
-</suite> <!-- Failed suite [Loan Department] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="Section17_TestNG.A8_DataProvider">
+      <class name="Section17_Parameters.A1_Parameters">
         <methods>
-          <include name="timeOutExample"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- Section17_TestNG.A8_DataProvider -->
+      </class> <!-- Section17_Parameters.A1_Parameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="78" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+  <suite name="Suite" duration-ms="81" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+    <test name="Test" duration-ms="81" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
       <class name="seleniummaven.AppiumTest">
-        <test-method status="PASS" signature="android()[pri:0, instance:seleniummaven.AppiumTest@7921b0a2]" name="android" duration-ms="0" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="android()[pri:0, instance:seleniummaven.AppiumTest@7921b0a2]" name="android" duration-ms="0" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- android -->
-        <test-method status="PASS" signature="ios()[pri:0, instance:seleniummaven.AppiumTest@7921b0a2]" name="ios" duration-ms="1" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="ios()[pri:0, instance:seleniummaven.AppiumTest@7921b0a2]" name="ios" duration-ms="0" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ios -->
       </class> <!-- seleniummaven.AppiumTest -->
       <class name="seleniummaven.Selenium">
-        <test-method status="PASS" signature="BrowserAutomation()[pri:0, instance:seleniummaven.Selenium@6a024a67]" name="BrowserAutomation" duration-ms="0" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="BrowserAutomation()[pri:0, instance:seleniummaven.Selenium@6a024a67]" name="BrowserAutomation" duration-ms="1" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserAutomation -->
-        <test-method status="PASS" signature="elementsUI()[pri:0, instance:seleniummaven.Selenium@6a024a67]" name="elementsUI" duration-ms="0" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="elementsUI()[pri:0, instance:seleniummaven.Selenium@6a024a67]" name="elementsUI" duration-ms="0" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- elementsUI -->
       </class> <!-- seleniummaven.Selenium -->
       <class name="seleniummaven.RestApiTest">
-        <test-method status="PASS" signature="deleteTwitter()[pri:0, instance:seleniummaven.RestApiTest@6ea12c19]" name="deleteTwitter" duration-ms="12" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="deleteTwitter()[pri:0, instance:seleniummaven.RestApiTest@6ea12c19]" name="deleteTwitter" duration-ms="15" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteTwitter -->
-        <test-method status="PASS" signature="posJira()[pri:0, instance:seleniummaven.RestApiTest@6ea12c19]" name="posJira" duration-ms="0" started-at="2019-05-25T21:15:18Z" finished-at="2019-05-25T21:15:18Z">
+        <test-method status="PASS" signature="posJira()[pri:0, instance:seleniummaven.RestApiTest@6ea12c19]" name="posJira" duration-ms="1" started-at="2019-05-26T04:15:58Z" finished-at="2019-05-26T04:15:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- posJira -->

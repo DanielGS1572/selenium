@@ -27,3 +27,8 @@ Para ejecutar un archivo .xml con maven:
 		mvn test -PSmoke	... También puede ser:
 		mvn -PSmoke test
 		
+*************************** JENKINS *************************** 
+Para ejecutar jenkins:
+java -jar jenkins.war --httpPort=9090
+
+9db857d6cdba40cf9ae31afa2b588b02

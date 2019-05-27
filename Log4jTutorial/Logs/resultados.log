@@ -1,0 +1,4 @@
+18:16:06.814 [main] DEBUG Alpha.DemoAlpha - I am debugging
+18:16:06.817 [main] INFO  Alpha.DemoAlpha - Info log
+18:16:06.817 [main] ERROR Alpha.DemoAlpha - object is not present
+18:16:06.818 [main] FATAL Alpha.DemoAlpha - this is fatal

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./logs</Property>		<!-- Aqui se define el basepath, que viende siendo el [Proyecto]/Logs -->
+	</Properties>
+	<Appenders>
+		<!-- Sección B -->
+		<!-- El nombre del archivo ya debe de existir... "resultados.log" -->
+		<RollingFile name="File" fileName="${basePath}/resultados.log"
+			filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">		<!-- Es el patrón que creará el log -->
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500" />	<!-- Si se pasa de 500 kb creará un nuevo archivo -->
+		</RollingFile>
+		<!-- FINSección B -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<!-- Seccion A -->
+		<!-- En esta sección se le dice que nada más esta clase sea el nivel de 
+			logging de tipo trace, y todo lo demás será nivel error -->
+		<Logger name="Alpha.DemoAlpha" level="trace" additivity="false">	<!-- La instrucción de additivity hace que no se ejecute dos veces -->
+			<AppenderRef ref="File" /> <!-- Otro caso sería "Console" -->
+		</Logger>
+		<!-- FIN Seccion A -->
+		<Root level="error"> <!-- trace -->
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>

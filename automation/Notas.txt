@@ -1,0 +1,13 @@
+Para usar cucumber se debe instalar el plugin del marketplace (se busca cucumber y el plugin se llama natural)
+Crear un proyecto de tipo  maven en el que el archetype es de tipo quickstart
+Se requiere cucumber-java y cucumber-JUnit en el pom
+
+Archivos relacionados con CUCUMBER
+Feature file: (es importante que termine en .feature)
+Es el que contiene Given, When, Then
+
+Step definition file:
+Cada paso que se defina debe de haber una correspondencia con codigo automatizado
+
+JUnit Test runners:
+Ejecuta todos los casos de uso (dentro del feature file)

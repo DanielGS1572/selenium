@@ -8,6 +8,7 @@ public class A1_ParentChild {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Danielgonzali\\Documents\\Selenium\\repo\\selenium\\Artefactos\\chromedriver74.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Artefactos/driverForLinux/chromedriver72");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.evernote.com/Login.action");
 		
@@ -16,7 +17,7 @@ public class A1_ParentChild {
 		*/
 		driver.findElement(By.xpath("//div[@id='email-wrapper']/input")).sendKeys("asdf");
 		
-		//Para escribir paths absolutos en xpath seria algo así:
+		//Para escribir paths absolutos en xpath seria algo asï¿½:
 		//		//body//section/div/div/div/li[2]
 		
 		//Para obtener el siguiente elemento hermano

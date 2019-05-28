@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apache-log4j-2.11.2-bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Artefactos/Log4J/apache-log4j-2.11.2-bin.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

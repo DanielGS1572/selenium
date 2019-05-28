@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c192463-59fb-42d2-a7e5-8ad220f07837" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestNG/Section17_DataDriven.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNG/src/Section17_Parameters/A1_Parameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNG/src/Section17_Parameters/datadriven.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A10_Notas" afterDir="false" />
+    <list default="true" id="9d909a7c-5f8c-40cf-953a-ca564ce716a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPageFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObject/src/TestCases/LoginApplicationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG/TestNG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG/TestNG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG/src/Section17_TestNG/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG/src/Section17_TestNG/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG/testng9TestListeners.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG/testng9TestListeners.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestNG/Section17_TestNG/A5_Annotations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestNG/Section17_TestNG/A5_Annotations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,9 +19,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A4_Alerts.java">
+        <entry file="file://$PROJECT_DIR$/PageObject/src/TestCases/LoginApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPageFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PageObject/src/TestCases/LoginApplicationFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A1_Synchronization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="51" column="90" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/demos/A2_Locators.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -32,85 +75,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A5_TestNG_Assertions.java">
+        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A6_Calendars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A1_Synchronization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A2_Synchronization_Explicit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A3_Fluent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section10_AJAX/A1_Actions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_Parameters/A1_Parameters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNG/Section17_DataDriven.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_Parameters/datadriven.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -119,9 +96,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Thread.slee</find>
-      <find>selenium</find>
-      <find>open</find>
+      <find>System.setProperty(&quot;webdriver.chrome.driver&quot;</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/SeleniumTraining</dir>
@@ -133,32 +108,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SeleniumTraining/src/Section10_AJAX/A1_Actions.java" />
-        <option value="$PROJECT_DIR$/TestNG/testng2Package.xml" />
-        <option value="$PROJECT_DIR$/TestNG/testng2Regex.xml" />
-        <option value="$PROJECT_DIR$/TestNG/testng.xml" />
-        <option value="$PROJECT_DIR$/TestNG/testng5Annotations.xml" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A4_Annotations.java" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A5_Annotations.java" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A1_Basics.java" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A3_Basics3.java" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A2_Basics2.java" />
-        <option value="$PROJECT_DIR$/TestNG/testng6Groups.xml" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/Listener.java" />
-        <option value="$PROJECT_DIR$/TestNG/testng9TestListeners.xml" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_TestNG/A10_Notas" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_Parameters/datadriven.properties" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_Parameters/A1_Annotations.java" />
-        <option value="$PROJECT_DIR$/TestNG/Section17_DataDriven.xml" />
-        <option value="$PROJECT_DIR$/TestNG/src/Section17_Parameters/A1_Parameters.java" />
+        <option value="$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPageFactory.java" />
+        <option value="$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java" />
+        <option value="$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java" />
+        <option value="$PROJECT_DIR$/PageObject/src/TestCases/LoginApplicationFactory.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="2560" />
+    <option name="height" value="1442" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -166,29 +127,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="selenium" type="58d84e3e:PackageViewProjectNode" />
-              <item name="SeleniumTraining" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="selenium" type="58d84e3e:PackageViewProjectNode" />
-              <item name="TestNG" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="selenium" type="58d84e3e:PackageViewProjectNode" />
-              <item name="TestNG" type="616d4139:PackageViewModuleNode" />
-              <item name="Section17_TestNG" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ObjectRepository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PageObject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCases" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="SeleniumTraining" type="462c0819:PsiDirectoryNode" />
@@ -214,111 +177,25 @@
               <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="SeleniumTraining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Section8_WebElements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumTraining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Section9_Synchronization" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeleniumTraining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Section10_AJAX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestNG" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestNG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestNG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Section17_Parameters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name=".settings" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="bin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="bin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Section17_TestNG" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Section17_Parameters" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="selenium" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="TestNG" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Section17_TestNG" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Artefactos/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TestNG" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Section17_Parameters" />
-      <recent name="Section17_TestNG" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/TestNG" />
-      <recent name="$PROJECT_DIR$/TestNG/test-output" />
+      <recent name="TestCases" />
+      <recent name="ObjectRepository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,33 +210,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/daniel/Documentos/repo/selenium/TestNG/Section17_DataDriven.xml">
-    <configuration name="A1_Parameters" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
+  <component name="RunManager">
+    <configuration name="LoginApplicationFactory.Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PageObject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Section17_Parameters.*" />
+          <option name="PATTERN" value="TestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Section17_Parameters" />
-      <option name="MAIN_CLASS_NAME" value="Section17_Parameters.A1_Parameters" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="A1_Parameters.Login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Section17_Parameters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Section17_Parameters" />
-      <option name="MAIN_CLASS_NAME" value="Section17_Parameters.A1_Parameters" />
+      <option name="PACKAGE_NAME" value="TestCases" />
+      <option name="MAIN_CLASS_NAME" value="TestCases.LoginApplicationFactory" />
       <option name="METHOD_NAME" value="Login" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -368,43 +229,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/Section17_DataDriven.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG/Section17_DataDriven.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng6Groups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG/testng6Groups.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng9TestListeners.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestNG" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG/testng9TestListeners.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./home/daniel/Documentos/repo/selenium/TestNG/Section17_DataDriven.xml" />
-        <item itemvalue="TestNG.A1_Parameters" />
-        <item itemvalue="TestNG.A1_Parameters.Login" />
-        <item itemvalue="TestNG./home/daniel/Documentos/repo/selenium/TestNG/testng9TestListeners.xml" />
-        <item itemvalue="TestNG./home/daniel/Documentos/repo/selenium/TestNG/testng6Groups.xml" />
+        <item itemvalue="TestNG.LoginApplicationFactory.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -413,64 +240,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c192463-59fb-42d2-a7e5-8ad220f07837" name="Default Changelist" comment="" />
-      <created>1558650642158</created>
+      <changelist id="9d909a7c-5f8c-40cf-953a-ca564ce716a9" name="Default Changelist" comment="" />
+      <created>1558997649955</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558650642158</updated>
-      <workItem from="1558650651377" duration="13574000" />
+      <updated>1558997649955</updated>
+      <workItem from="1558997654520" duration="3011000" />
+      <workItem from="1559056707731" duration="595000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_testng5Annotations_xml - 2019.05.23 at 19h 03m 55s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng5Annotations.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_testng5Annotations_xml - 2019.05.23 at 19h 14m 28s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng5Annotations.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_testng5Annotations_xml - 2019.05.23 at 19h 35m 39s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng5Annotations.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_testng6Groups_xml - 2019.05.23 at 19h 42m 34s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng6Groups.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_testng9TestListeners_xml - 2019.05.24 at 15h 33m 05s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/testng9TestListeners.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="A1_Annotations - 2019.05.24 at 15h 59m 10s.xml">
-      <configuration name="A1_Annotations" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="A1_Annotations_Login - 2019.05.24 at 16h 24m 17s.xml">
-      <configuration name="A1_Annotations.Login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="A1_Annotations - 2019.05.24 at 16h 37m 51s.xml">
-      <configuration name="A1_Annotations" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_Section17_DataDriven_xml - 2019.05.24 at 16h 39m 42s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/Section17_DataDriven.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_daniel_Documentos_repo_selenium_TestNG_Section17_DataDriven_xml - 2019.05.24 at 16h 41m 28s.xml">
-      <configuration name="/home/daniel/Documentos/repo/selenium/TestNG/Section17_DataDriven.xml" configurationId="TestNG" />
+    <history-entry file="LoginApplicationFactory_Login - 2019.05.27 at 18h 36m 03s.xml">
+      <configuration name="LoginApplicationFactory.Login" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13574000" />
+    <option name="totallyTimeSpent" value="3606000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="1920" y="-2" width="2560" height="1442" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25179" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
@@ -478,343 +273,90 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestNG/testng4Regex.xml">
+    <entry file="file://$PROJECT_DIR$/PageObject/src/TestCases/LoginApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng2.xml">
+    <entry file="file://$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng5Annotations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng3Package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A5_Annotations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
           <folding>
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A3_Basics3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A2_Basics2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng6Groups.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/testng9TestListeners.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="127" selection-start-line="8" selection-start-column="127" selection-end-line="8" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/test-output/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A9_TestListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A10_Notas">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_TestNG/A1_Basics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Artefactos/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/chrome/ChromeDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Artefactos/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/WebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A1_Synchronization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="51" column="90" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/demos/A2_Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
+        <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section7/A2_CSSSelector.java">
+    <entry file="file://$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A1_ElementosDinamicos.java">
+    <entry file="file://$PROJECT_DIR$/PageObject/src/TestCases/LoginApplicationFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A2_DropDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A3_Radiobuttons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A4_Alerts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A5_TestNG_Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section8_WebElements/A6_Calendars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A1_Synchronization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A2_Synchronization_Explicit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section9_Synchronization/A3_Fluent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeleniumTraining/src/Section10_AJAX/A1_Actions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_Parameters/datadriven.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/Section17_DataDriven.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG/src/Section17_Parameters/A1_Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SeleniumTraining</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>.mylyn</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d909a7c-5f8c-40cf-953a-ca564ce716a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PageObject/src/ObjectRepository/RediffLoginPageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PageObject/src/TestCases/LoginApplicationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/src/Section7/A1_ParentChild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumTraining/src/demos/A1_OpenBrowser.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d909a7c-5f8c-40cf-953a-ca564ce716a9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +237,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558997649955</updated>
       <workItem from="1558997654520" duration="3011000" />
-      <workItem from="1559056707731" duration="595000" />
+      <workItem from="1559056707731" duration="920000" />
     </task>
     <servers />
   </component>
@@ -256,11 +247,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3606000" />
+    <option name="totallyTimeSpent" value="3931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="2560" height="1442" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25179" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -302,10 +292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-          <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

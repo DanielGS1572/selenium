@@ -1,0 +1,29 @@
+De la página
+http://automationpractice.com/index.php?id_category=8&controller=category
+
+Para seleccionar un elemento por la clase
+//ul[@class='product_list grid row'] 		Ver que se tiene que poner las demas clases separadas por espacio
+//ul[@class='product_list grid row']/li[1]	Si se quiere seleccionar el primer li hijo
+//ul[contains(@class,'product_list')]		Si se quiere encontrar una clase sin que haga match exacto
+//section[@id='informations_block_left_1' and @class='block informations_block_left']		Se pueden poner condicionales con el selector de atributos(@)
+//div[@class='block_content list-block']/ul/li[last()]						Para seleccionar el último elemento 
+//div[@class='block_content list-block']/ul/li[last()-2]					Para seleccionar el antepenúltimo elemento
+//div[@class='block_content list-block']/ul/li[position() < 3]					Para seleccionar los dos primeros
+//div[@class='block_content list-block']/ul/li[position() > last()-2]				Para seleccionar los ultimos dos
+//div[@id='search_block_top'] | //div[@id='header_logo']					Para seleccionar dos elementos con diferentes ids
+
+De la página 
+https://www.w3schools.com/html/html_tables.asp
+//td[text()='Germany']										Para seleccionar de acuerdo al texto
+//td[text()='Germany']//ancestor::tr								?? ancestor ??
+//td[text()='Germany']//following::td								Selecciona todos los td en adelante sin contar con el que coincide
+//td[text()='Alfreds Futterkiste']//following-sibling::td					Regresa los hermanos siguientes sin contar Alfreds Futterkiste
+//td[text()='Alfreds Futterkiste']//..//following-sibling::td					Regresa los hermanos siguientes contando Alfreds Futterkiste
+//td[text()='Alfreds Futterkiste']//..//following-sibling::tr					Se sube un nivel para traer los hermanos (de un nivel mas arriba)
+
+cubrir los casos ...
+parent
+descendant
+child
+
+Para que sirve node-name? pagina 9 (QAV_AASA_003)

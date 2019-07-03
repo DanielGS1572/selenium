@@ -8,15 +8,16 @@ public class A1_OpenBrowser {
 
 	public static void main(String[] args) {
 		//1.- Open the web browser
-	//Se setean las propiedades para decirle el .exe que hará que se habrá un explorer
+	//Se setean las propiedades para decirle el .exe que harï¿½ que se habrï¿½ un explorer
 		//google chrome --> webdriver.chrome.driver
 		//firefox 		--> webdriver.gecko.driver
 		//IE			--> webdriver.ie.driver
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Danielgonzali\\Documents\\Selenium\\repo\\chromedriver74.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Artefactos/driverForLinux/chromedriver72");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://google.com");
-		System.out.println("URL " + driver.getCurrentUrl());		//para revisar si se accedio correctamente a la url (para revisar que no haya alguna redirección)
+		System.out.println("URL " + driver.getCurrentUrl());		//para revisar si se accedio correctamente a la url (para revisar que no haya alguna redirecciï¿½n)
 		//System.out.println("Page source " + driver.getPageSource());		//page source. En algunos casos (como bancos por ejemplo) no se puede dar clic derecho y no se puede ver el codigo fuente
 		System.out.println(driver.getTitle());			//Para obtener el titulo del tab
 		

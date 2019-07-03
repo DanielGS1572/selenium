@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Log4jTutorial/Log4jTutorial.iml" filepath="$PROJECT_DIR$/Log4jTutorial/Log4jTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PageObject/PageObject.iml" filepath="$PROJECT_DIR$/PageObject/PageObject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" filepath="$PROJECT_DIR$/SeleniumTraining/SeleniumTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestNG/TestNG.iml" filepath="$PROJECT_DIR$/TestNG/TestNG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mavenjava/src/main/main.iml" filepath="$PROJECT_DIR$/Mavenjava/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POI/src/test/test.iml" filepath="$PROJECT_DIR$/POI/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mavenjava/src/test/test1.iml" filepath="$PROJECT_DIR$/Mavenjava/src/test/test1.iml" />
     </modules>
   </component>
 </project>

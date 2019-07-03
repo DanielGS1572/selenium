@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="chromedriver_linux64">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Artefactos/driverForLinux/chromedriver_linux64.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

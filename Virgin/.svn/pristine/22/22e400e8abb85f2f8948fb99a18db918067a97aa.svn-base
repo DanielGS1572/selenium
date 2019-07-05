@@ -1,0 +1,46 @@
+package Page;
+
+import org.openqa.selenium.WebDriver;
+
+import Utilerias.Selectores;
+
+public class Billing {
+	
+
+
+	
+	
+	private WebDriver webDriver;
+	private final String strFname = "[name='fname']";
+	private final String strLName = "[name='lName']";
+	private final String strAddress = "[name='address']";
+	private final String strCity = "[name='City']";
+	private final String strState = "[name='state']";
+
+	private final String strZipCode = "[name='zipCode']";
+	private final String strEmailAddress = "[name='emailAddress']";
+	private final String strConfirmEmail = "[name='confirmEmail']";
+	private final String strServiceTerms = "[name='serviceTerms']";
+	private final String strBtnConfirmation = ".billing-shipping-section .cta-button";
+	
+	
+	public Billing(WebDriver webDriver) {
+		this.webDriver = webDriver;
+		ejecutarAcciones();
+	}
+	public void ejecutarAcciones(){
+	//	webDriver.findElement(By.cssSelector("[name='emailAddress']"))
+			Selectores.getElementBySelector(webDriver,strFname).sendKeys("Nombre");
+		Selectores.getElementBySelector(webDriver,strLName).sendKeys("Apellido");
+		Selectores.getElementBySelector(webDriver,strAddress).sendKeys("Direccion");
+		Selectores.getElementBySelector(webDriver,strCity).sendKeys("Ciudad");
+		
+	//	new Select(Selectores.getElementBySelector(By.cssSelector("[name='state']"))).selectByIndex(2);
+		
+/*	Selectores.getElementBySelector(By.name("zipCode")).sendKeys("77555");
+		Selectores.getElementBySelector(By.cssSelector("[name='emailAddress']")).sendKeys("un@email.com");
+		Selectores.getElementBySelector(By.cssSelector("[name='confirmEmail']")).sendKeys("un@email.com");
+		Selectores.getElementBySelector(By.cssSelector("[name='serviceTerms']")).click();
+		Selectores.getElementBySelector(By.cssSelector(".billing-shipping-section .cta-button")).click(); 
+	 */}
+}

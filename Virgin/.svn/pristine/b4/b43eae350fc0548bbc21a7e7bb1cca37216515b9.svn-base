@@ -1,0 +1,44 @@
+package Page;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import driverconfig.TestBase;
+
+public class TestCase extends TestBase{
+	
+	private WebDriver driver;
+	private final String URL = "https://www.virginmobileusa.com";
+	private HomePage homePage;
+	private Shop shopPage;
+	private Phone phonePage;
+	private Billing billingPage;
+	private Cart cartPage;
+	
+	@BeforeTest
+	public void initialization(){
+		WebDriverManager.chromedriver().setup();			//aqui ya no se hace la configuracion de variables del system
+		driver = new ChromeDriver();
+	}
+  @Test
+  public void f() {
+	  homePage = new HomePage(driver);
+	  shopPage = new Shop(driver);
+	  phonePage = new Phone(driver);
+	  cartPage = new Cart(driver);
+	  billingPage = new Billing(driver);
+  }
+  @BeforeClass
+  public void beforeClass() {
+	  initDriver();
+		driver = getWebDriver();
+		driver.get(URL);
+  }
+
+   
+}

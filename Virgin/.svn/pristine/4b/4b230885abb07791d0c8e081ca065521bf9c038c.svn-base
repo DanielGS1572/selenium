@@ -1,0 +1,40 @@
+package Page;
+
+import org.openqa.selenium.WebDriver;
+
+import Utilerias.Selectores;
+
+public class Cart {
+	private WebDriver webDriver;
+
+	private final String strNextDay = "label[for='nextDay']";
+	private final String strApplyPromo = "button.add-promo";
+	private final String strCodigoNoValido = ".validation_message ";
+	private final String strTotal = "div.before-due h4";
+	private final String strPromo = "#promo_Code";
+	private final String strContinuarBilling = " a.cta-button";
+	private float fltTotal = Float.parseFloat(Selectores
+			.getElementBySelector(webDriver, strTotal).getText()
+			.replace("$", ""));
+
+	private String strValorPromo = "12345";
+
+	public Cart(WebDriver webDriver) {
+		this.webDriver = webDriver;
+		ejecutarAcciones();
+	}
+
+	public void ejecutarAcciones() {
+		Selectores.getElementBySelector(webDriver, strNextDay).click();
+		Selectores.getElementBySelector(webDriver, strPromo).sendKeys(
+				strValorPromo);
+		Selectores.getElementBySelector(webDriver, strPromo).sendKeys(
+				strApplyPromo);
+		Selectores.getElementBySelector(webDriver, strContinuarBilling)
+				.click();
+	}
+
+	public float getFltTotal() {
+		return fltTotal;
+	}
+}

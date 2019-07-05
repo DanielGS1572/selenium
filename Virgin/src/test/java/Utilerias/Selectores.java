@@ -1,0 +1,26 @@
+package Utilerias;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Selectores {
+	public static WebElement getElementBySelector(
+			WebDriver driver, String cssSelector) {
+		WebElement wbElement;
+		WebDriverWait wdWait = new WebDriverWait(driver,10); 
+		try {
+			wbElement = wdWait.until(ExpectedConditions.elementToBeClickable(By
+					.cssSelector(cssSelector)));
+		} catch (Exception e) {
+			
+			System.err.println("Element not found for selector: [ "
+					+ cssSelector + " ] Url: [ " + driver.getCurrentUrl()
+					+ " ]");
+			return null;
+		}
+		return wbElement;
+	} 
+}

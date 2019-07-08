@@ -12,3 +12,5 @@
 2019-05-24 23:52:49,357 4111971 [      Worker-32] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-05-24 23:53:24,165 4146779 [      Worker-25] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-05-24 23:53:24,167 4146781 [      Worker-25] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-07-04 19:12:18,954 419439 [      Worker-13] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-07-04 19:12:19,589 420074 [      Worker-13] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

@@ -8344,3 +8344,1690 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://s
 !MESSAGE No repository found at https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download.
 !SUBENTRY 1 org.eclipse.epp.mpc.ui 1 0 2019-05-27 21:44:11.524
 !MESSAGE AppLaud PhoneGap for Android with JSLint/JSHint 1.2
+!SESSION 2019-07-03 19:13:46.206 -----------------------------------------------
+eclipse.buildId=3.9.4.201804120943-RELEASE-e46
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.agileware.natural.cucumber.ui 4 0 2019-07-03 19:17:05.617
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.agileware.natural.cucumber.ui [1581]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates.ui
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates.ui; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates.ui [1604]
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ui.codetemplates [1603]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.generator [1599]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.xtext.generator [1607]
+                              Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                                   org.eclipse.xtext.ecore [1598]
+                                     No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ecore 4 0 2019-07-03 19:17:05.621
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ecore [1598]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.generator 4 0 2019-07-03 19:17:05.622
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.generator [1599]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.xtext.generator [1607]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ecore [1598]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates 4 0 2019-07-03 19:17:05.624
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates [1603]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.generator [1599]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.xtext.generator [1607]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.ecore [1598]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates.ui 4 0 2019-07-03 19:17:05.626
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates.ui [1604]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates [1603]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.generator [1599]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.xtext.generator [1607]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.ecore [1598]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.xtext.generator 4 0 2019-07-03 19:17:05.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.xtext.generator [1607]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ecore [1598]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 0 2019-07-03 19:26:00.194
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-03 19:26:00.194
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.ui 2 0 2019-07-03 19:26:20.737
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-03 19:26:20.737
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2019-07-03 19:26:54.601
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-07-03 19:26:54.601
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@73cd3b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6421d85c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2019-07-03 19:27:22.143
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2019-07-03 19:27:22.143
+!MESSAGE Cannot determine URI for '/automation/src/test/java/Features/Login.feature'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/automation/src/test/java/Features/Login.feature'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:560)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4178)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:229)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1466)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:150)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:3154)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2126)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3172)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3197)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:362)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1324)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:669)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:536)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:520)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:669)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:725)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1059)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-07-03 19:27:22.145
+!MESSAGE Cannot determine URI for '/automation/src/test/java/Features/Login.feature'.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-03 19:27:36.154
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Danielgonzali'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-03 19:27:50.346
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-03 19:27:51.153
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+!SESSION 2019-07-04 18:55:06.928 -----------------------------------------------
+eclipse.buildId=3.9.4.201804120943-RELEASE-e46
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.agileware.natural.cucumber.ui 4 0 2019-07-04 18:58:57.153
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.agileware.natural.cucumber.ui [1581]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates.ui
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates.ui; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates.ui [1604]
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ui.codetemplates [1603]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.generator [1599]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.ecore [1598]
+                              No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.xtext.generator [1607]
+                              Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ecore 4 0 2019-07-04 18:58:57.156
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ecore [1598]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.generator 4 0 2019-07-04 18:58:57.157
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.generator [1599]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ecore [1598]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.xtext.generator [1607]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates 4 0 2019-07-04 18:58:57.159
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates [1603]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.generator [1599]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ecore [1598]
+                No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.xtext.generator [1607]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates.ui 4 0 2019-07-04 18:58:57.160
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates.ui [1604]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates [1603]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.generator [1599]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.ecore [1598]
+                       No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.xtext.generator [1607]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.xtext.generator 4 0 2019-07-04 18:58:57.161
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.xtext.generator [1607]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ecore [1598]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 0 2019-07-04 19:02:01.586
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-04 19:02:01.587
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.ui 2 0 2019-07-04 19:02:22.193
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-04 19:02:22.193
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2019-07-04 19:02:58.390
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-07-04 19:02:58.390
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b592f17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3884e858,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-04 19:04:25.374
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Danielgonzali'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-04 19:04:48.138
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-04 19:04:49.577
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+!SESSION 2019-07-04 19:25:22.074 -----------------------------------------------
+eclipse.buildId=3.9.4.201804120943-RELEASE-e46
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.agileware.natural.cucumber.ui 4 0 2019-07-04 19:27:59.553
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.agileware.natural.cucumber.ui [1581]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates.ui
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates.ui; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates.ui [1604]
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ui.codetemplates [1603]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.generator [1599]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.xtext.generator [1607]
+                              Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                                   org.eclipse.xtext.ecore [1598]
+                                     No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ecore 4 0 2019-07-04 19:27:59.556
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ecore [1598]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.generator 4 0 2019-07-04 19:27:59.558
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.generator [1599]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.xtext.generator [1607]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ecore [1598]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates 4 0 2019-07-04 19:27:59.560
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates [1603]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.generator [1599]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.xtext.generator [1607]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.ecore [1598]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates.ui 4 0 2019-07-04 19:27:59.561
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates.ui [1604]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates [1603]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.generator [1599]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.xtext.generator [1607]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.ecore [1598]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.xtext.generator 4 0 2019-07-04 19:27:59.563
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.xtext.generator [1607]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ecore [1598]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-07-04 19:30:42.799
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2019-07-04 19:30:46.632
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-04 19:30:46.632
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.ui 2 0 2019-07-04 19:31:15.098
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-04 19:31:15.098
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2019-07-04 19:31:56.803
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-07-04 19:31:56.803
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c8c5513,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3502b614,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-04 19:32:56.159
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Danielgonzali'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-04 19:33:17.663
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-04 19:33:19.918
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-04 19:41:18.311
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-04 19:41:18.312
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.ui 2 0 2019-07-04 19:56:53.043
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+!SESSION 2019-07-06 18:15:34.044 -----------------------------------------------
+eclipse.buildId=3.9.4.201804120943-RELEASE-e46
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.agileware.natural.cucumber.ui 4 0 2019-07-06 18:18:59.155
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.agileware.natural.cucumber.ui [1581]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates.ui
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates.ui; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates.ui [1604]
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ui.codetemplates [1603]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.generator [1599]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.xtext.generator [1607]
+                              Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                              Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                                   org.eclipse.xtext.ecore [1598]
+                                     No resolution report for the bundle.                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ecore 4 0 2019-07-06 18:18:59.158
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ecore [1598]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.generator 4 0 2019-07-06 18:18:59.160
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.generator [1599]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.xtext.generator [1607]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.ecore [1598]
+                No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates 4 0 2019-07-06 18:18:59.161
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates [1603]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.generator [1599]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.xtext.generator [1607]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.ecore [1598]
+                       No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.ui.codetemplates.ui 4 0 2019-07-06 18:18:59.163
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.ui.codetemplates.ui [1604]
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ui.codetemplates; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ui.codetemplates; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ui.codetemplates [1603]
+         Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.mwe2.launch; bundle-version="2.2.0"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.xtext.generator; bundle-version="[2.10.0,3.0.0)"; x-installation:="greedy"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+              org.eclipse.xtext.generator [1599]
+                Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.xtext.xtext.generator; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.xtext.generator; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                     org.eclipse.xtext.xtext.generator [1607]
+                       Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+                       Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+                            org.eclipse.xtext.ecore [1598]
+                              No resolution report for the bundle.                Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.xtext.xtext.generator 4 0 2019-07-06 18:18:59.164
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.xtext.xtext.generator [1607]
+  Unresolved requirement: Require-Bundle: de.itemis.xtext.antlr; bundle-version="2.0.0"; visibility:="reexport"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.xtext.ecore; bundle-version="[2.10.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.xtext.ecore; bundle-version="2.10.0.v201605250459"; singleton:="true"
+       org.eclipse.xtext.ecore [1598]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"] because it is exposed to package 'com.google.common.base' from resources com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"] and com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtext
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="15.0.0.v201403281430"; osgi.identity="com.google.guava"]
+
+Chain 2:
+  org.eclipse.xtext.ecore [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.ecore"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtext)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.10.0.v201605250459"; osgi.wiring.bundle="org.eclipse.xtext"; singleton:="true"
+  org.eclipse.xtext.util [osgi.identity; type="osgi.bundle"; version:Version="2.10.0.v201605250459"; osgi.identity="org.eclipse.xtext.util"]
+    require: (&(osgi.wiring.bundle=org.eclipse.xtend.lib)(&(bundle-version>=2.10.0)(!(bundle-version>=3.0.0))))
+     |
+    provide: osgi.wiring.bundle: org.eclipse.xtend.lib
+  com.google.guava [osgi.identity; type="osgi.bundle"; version:Version="21.0.0.v20170206-1425"; osgi.identity="com.google.guava"]
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 0 2019-07-06 20:57:08.369
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-06 20:57:08.369
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.xtext.ui', id='org.eclipse.xtext.ui.editor.outline.QuickOutline'
+
+!ENTRY org.eclipse.ui 2 0 2019-07-06 20:57:31.578
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-06 20:57:31.578
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2019-07-06 20:58:05.282
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-07-06 20:58:05.282
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b5df8b7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1651bd68,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-06 20:59:28.219
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Danielgonzali'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-06 20:59:53.172
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to aer.ctrlflow.com:443 [aer.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-07-06 20:59:54.049
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to redhat.ctrlflow.com:443 [redhat.ctrlflow.com/138.201.81.7] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.core.filesystem 4 276 2019-07-06 21:33:32.148
+!MESSAGE Cannot create file because existing file of wrong type exists: C:\Users\Danielgonzali\Documents\Selenium\repo\selenium\Mavenjava\pom.xml.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-06 21:38:09.057
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-06 21:38:09.058
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-06 21:38:44.171
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-06 21:38:44.176
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

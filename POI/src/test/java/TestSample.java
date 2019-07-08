@@ -8,7 +8,7 @@ public class TestSample {
 		DataDriven dd = new DataDriven();
 		ArrayList<String> data;
 		try {
-			data = dd.getData("Add Profile");
+			data = dd.getData("Login");
 			System.out.println(data.get(0));
 			System.out.println(data.get(1));
 			System.out.println(data.get(2));

@@ -1,4 +1,4 @@
-package frames;
+package generales;
 
 import java.util.List;
 

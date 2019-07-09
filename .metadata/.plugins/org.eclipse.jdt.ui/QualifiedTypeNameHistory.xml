@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="java.awt.RenderingHints.Key"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
@@ -18,9 +17,12 @@
 <fullyQualifiedTypeName name="DataDriven"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.core.Logger"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
 <fullyQualifiedTypeName name="ObjectRepository.RediffLoginPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor"/>
 </qualifiedTypeNameHistroy>

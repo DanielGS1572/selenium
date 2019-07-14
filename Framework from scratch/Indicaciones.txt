@@ -1,0 +1,22 @@
+1) Desde consola para crear el proyecto de maven poner la siguiente instrucción
+mvn archetype:generate -DgroupId=Academy -DartifactId=ProjectE2E -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+ArtifactId es el nombre de la carpeta principal
+GroupId es el nombre de los paquetes dentro de main/java y test/java
+
+2) dentro de la carpeta creada ejecutar:
+mvn eclipse:eclipse
+... con esto va a crear la carpeta de .classpath y .project
+
+3) En eclipse... import existing maven projects
+
+4) Configuar el pom con:
+	+ selenium ("selenium maven dependencies")
+	+ testng
+
+5) Crear un archivo de .properties para que sea dinamico el browser
+6) Cuando se intente correr una clase con la anotacion @test revisar que este en project > properties > java build path > libraries > testng
+
+
+la diferencia entre mvn test y testng run (desde menu contextual):
+	+ mvn test ejecuta un archivo xml del testng y este archivo debe estar al mismo nivel que el POM (para poder ejecutar la instruccion mvn test)
+	+ testng run es para ejecutar una sola clase con la anotacioin @test

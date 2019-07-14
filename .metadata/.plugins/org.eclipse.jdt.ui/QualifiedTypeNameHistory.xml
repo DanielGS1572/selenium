@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="java.time.Duration"/>
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
 <fullyQualifiedTypeName name="java.util.function.Function"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
 <fullyQualifiedTypeName name="org.testng.ITestListener"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
@@ -25,4 +24,6 @@
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

@@ -14,7 +14,21 @@ mvn eclipse:eclipse
 	+ testng
 
 5) Crear un archivo de .properties para que sea dinamico el browser
-6) Cuando se intente correr una clase con la anotacion @test revisar que este en project > properties > java build path > libraries > testng
+6) Cuando se intente correr una clase con la anotacion @test revisar que este en project > properties > java build path > libraries > testng (si no, dar
+clic en la anotacion add library to...)
+
+7) En HomePage ver como se hace la parte de DataProvider
+
+8) Para tener control y ejecutar los casos de prueba que se le indican en un xml hay que convertir el proyecto
+a testng y para poder ejecutarlo se debe de dar clic derecho en el xml y run "testng suite"
+
+9) Para que se ejecute con jenkins debe de estar integrado en el pom el testng (y así ya se puede ejecutar mvn test).
+Para esto se debe de buscar en google testng integration with maven y debe estar dentro de la etiqueta <build>
+las etiquetas plugin para que asi se pueda leer el xml (se debe de poner en la etiqueta suiteXmlFiles)
+
+
+
+
 
 
 la diferencia entre mvn test y testng run (desde menu contextual):

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Academy.AppTest" duration-ms="9" started-at="2019-07-14T00:18:25Z" finished-at="2019-07-14T00:18:25Z">
+  <suite name="Suite" duration-ms="46372" started-at="2019-07-15T02:24:20Z" finished-at="2019-07-15T02:25:06Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="9" started-at="2019-07-14T00:18:25Z" finished-at="2019-07-14T00:18:25Z">
-    </test> <!-- Command line test -->
-  </suite> <!-- Academy.AppTest -->
+    <test name="Test" duration-ms="46372" started-at="2019-07-15T02:24:20Z" finished-at="2019-07-15T02:25:06Z">
+      <class name="Academy.HomePage">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Academy.HomePage@38364841]" name="beforeTest" is-config="true" duration-ms="16912" started-at="2019-07-15T02:24:20Z" finished-at="2019-07-15T02:24:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@38364841]" name="homePageNavigation" duration-ms="19423" started-at="2019-07-15T02:24:37Z" data-provider="provider" finished-at="2019-07-15T02:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unrestricted@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageNavigation -->
+        <test-method status="PASS" signature="homePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@38364841]" name="homePageNavigation" duration-ms="9089" started-at="2019-07-15T02:24:56Z" data-provider="provider" finished-at="2019-07-15T02:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricted@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageNavigation -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Academy.HomePage@38364841]" name="afterTest" is-config="true" duration-ms="885" started-at="2019-07-15T02:25:05Z" finished-at="2019-07-15T02:25:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Academy.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

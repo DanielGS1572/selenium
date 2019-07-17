@@ -5,7 +5,9 @@
     <classes>
       <class name="Academy.HomePage">
         <methods>
-          <include name="homePageNavigation" invocation-numbers="0 1"/>
+          <include name="homePageNavigation" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- Academy.HomePage -->
     </classes>

@@ -27,7 +27,23 @@ Para esto se debe de buscar en google testng integration with maven y debe estar
 las etiquetas plugin para que asi se pueda leer el xml (se debe de poner en la etiqueta suiteXmlFiles)
 
 
+Para integrar log4j
+10) agregarlo en el POM
+11) tener el archivo xml de log4j
+12) En el POM debe haber un maver resources filtering (buscarlo así en google), dentro de <build><resources>	
+	Tener cuidado de que esten las dos dependencias core y api y que sean las mismas versiones
+13) Al ejecutar una prueba se crea una carpeta que se llama logs
 
+Observacion... 
+a) Para que no se pueda instanciar un nuevo driver es mejor declararlo como static
+b) Es ideal que cuando termine la ejecución asignar la instancia a nulo para que garbage collector lo destruya
+c) si se tiene la anotación @afterTest se debe tener un tag de <test> diferente por cada clase para que cierre ventana por ventana, en lugar que cierre
+todas las ventanas de un jalón después de ejecutar la prueba 
+
+14) Para sacar screenshots se requiere de commons io
+	* Los screenshots pueden tomar una foto cuando falle una prueba (listener de test ng
+	* Se debe indicar en el testng.xml entre tags de <listeners><listener class-name="Academy.Listener"/></listeners> --> ITestResult .getName(), regresa 
+		el nombre de la prueba que falló
 
 
 

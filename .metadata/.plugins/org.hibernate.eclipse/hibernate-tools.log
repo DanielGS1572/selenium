@@ -180,3 +180,6 @@ java.lang.NullPointerException
 2019-07-16 20:43:56,537 5981153 [      Worker-35] WARN  nternal.embedder.EclipseLogger  - File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
 2019-07-16 20:43:56,537 5981153 [      Worker-35] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-07-16 20:43:56,546 5981162 [      Worker-35] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-07-16 21:43:35,858 9560474 [      Worker-40] WARN  nternal.embedder.EclipseLogger  - File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+2019-07-16 21:43:35,859 9560475 [      Worker-40] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-07-16 21:43:35,862 9560478 [      Worker-40] WARN  nternal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

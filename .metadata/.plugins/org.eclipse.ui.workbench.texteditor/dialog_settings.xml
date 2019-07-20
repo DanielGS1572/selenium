@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="strApplyPromo" key="selection"/>
+		<item value="ExtentReports(" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ExtentReports("/>
+			<item value="ExtentReports"/>
 			<item value="strApplyPromo"/>
 			<item value="button.add-promo"/>
 			<item value="strPromo"/>
 			<item value="promoCode"/>
 			<item value="marca"/>
 			<item value="private String "/>
-			<item value=", "/>
-			<item value="String "/>
 		</list>
 		<list key="replacehistory">
 			<item value="this."/>

@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
 <fullyQualifiedTypeName name="java.util.function.Function"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-<fullyQualifiedTypeName name="org.testng.ITestListener"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="DataDriven"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
@@ -27,4 +26,9 @@
 <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.core.Logger"/>
 <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="org.testng.ITestListener"/>
+<fullyQualifiedTypeName name="com.relevantcodes.extentreports.IReporter"/>
 </qualifiedTypeNameHistroy>

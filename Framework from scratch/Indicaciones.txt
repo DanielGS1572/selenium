@@ -45,7 +45,11 @@ todas las ventanas de un jalón después de ejecutar la prueba
 	* Se debe indicar en el testng.xml entre tags de <listeners><listener class-name="Academy.Listener"/></listeners> --> ITestResult .getName(), regresa 
 		el nombre de la prueba que falló
 
-
+15) Extent reports
+	* ver el archivo ExtentReporterNG dentro del proyecto (ya hace todo lo necesario, quiza se puede ahondar más después)
+	* Tambien se debe confiugrara el xml de testng
+	* Si la ejecución de la prueba se hace con maven esta en resources
+	* si la ejecución de la prueba se hace con testng esta en test-output
 
 la diferencia entre mvn test y testng run (desde menu contextual):
 	+ mvn test ejecuta un archivo xml del testng y este archivo debe estar al mismo nivel que el POM (para poder ejecutar la instruccion mvn test)
